@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,132 +12,161 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
-font-family:'Segoe UI',sans-serif;
-background:#081120;
-color:#fff;
-line-height:1.8;
+    font-family:'Segoe UI',sans-serif;
+    background:#081120;
+    color:#fff;
+    line-height:1.8;
 }
 
 nav{
-position:fixed;
-top:0;
-width:100%;
-background:#0d1b2a;
-padding:15px;
-text-align:center;
-z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,.3);
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0d1b2a;
+    padding:15px;
+    text-align:center;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.3);
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin:0 20px;
-font-weight:bold;
-transition:.3s;
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:600;
+    transition:.3s;
 }
 
 nav a:hover{
-color:#00b4d8;
+    color:#00b4d8;
 }
 
 header{
-padding:130px 20px 80px;
-text-align:center;
-background:linear-gradient(135deg,#081120,#112d4e);
+    text-align:center;
+    padding:130px 20px 80px;
+    background:linear-gradient(135deg,#081120,#112d4e);
 }
 
 header h1{
-font-size:4rem;
-margin-bottom:10px;
+    font-size:4rem;
+    margin-bottom:10px;
 }
 
 header p{
-font-size:1.4rem;
-color:#c9d6df;
+    font-size:1.4rem;
+    color:#c9d6df;
 }
 
 .stats{
-margin-top:20px;
-color:#00b4d8;
-font-weight:bold;
+    margin-top:20px;
+    color:#00b4d8;
+    font-weight:600;
 }
 
 section{
-max-width:1200px;
-margin:auto;
-padding:50px 20px;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
 }
 
 .section-title{
-font-size:2rem;
-margin-bottom:25px;
-border-left:5px solid #00b4d8;
-padding-left:15px;
+    font-size:2rem;
+    margin-bottom:25px;
+    border-left:5px solid #00b4d8;
+    padding-left:15px;
 }
 
 .card{
-background:#112240;
-padding:25px;
-border-radius:12px;
-margin-bottom:25px;
-box-shadow:0 4px 15px rgba(0,0,0,.25);
-transition:.3s;
+    background:#112240;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+    transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-5px);
+    transform:translateY(-5px);
 }
 
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:#112240;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+}
+
+.skill-card h3{
+    color:#00b4d8;
+    margin-bottom:15px;
 }
 
 .project{
-background:#112240;
-padding:25px;
-border-radius:12px;
-margin-bottom:20px;
-box-shadow:0 4px 15px rgba(0,0,0,.25);
-transition:.3s;
-}
-
-.project:hover{
-transform:translateY(-5px);
+    background:#112240;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
 }
 
 .project h3{
-color:#00b4d8;
-margin-bottom:15px;
+    color:#00b4d8;
+    margin-bottom:15px;
 }
 
-.project ul{
-padding-left:25px;
+ul{
+    padding-left:20px;
 }
 
-.project li{
-margin-bottom:12px;
+li{
+    margin-bottom:10px;
 }
 
-footer{
-background:#0d1b2a;
-text-align:center;
-padding:25px;
-margin-top:40px;
+.contact{
+    background:#112240;
+    padding:30px;
+    border-radius:15px;
 }
 
 .contact p{
-font-size:18px;
-margin:15px 0;
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+footer{
+    background:#0d1b2a;
+    padding:25px;
+    text-align:center;
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2.5rem;
+    }
+
+    nav a{
+        margin:0 8px;
+        font-size:14px;
+    }
 }
 
 </style>
@@ -146,123 +176,34 @@ margin:15px 0;
 <body>
 
 <nav>
-#about
-skills">Compétences</a>
-#projectsProjets</a>
-#contact
+    #about
+    #skillsCompétences</a>
+    #projects
+    ">Contact</a>
 </nav>
 
 <header>
 
-<h1>Anicet OBIANG NZE</h1>
-
-<p>Administrateur Réseaux, Systèmes & Infrastructure<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anicet OBIANG NZE | Administrateur Réseaux</title>
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family: Arial, sans-serif;
-    line-height:1.6;
-    background:#f4f6f9;
-    color:#333;
-}
-
-header{
-    background:#0A192F;
-    color:white;
-    text-align:center;
-    padding:80px 20px;
-}
-
-header h1{
-    font-size:3rem;
-    margin-bottom:10px;
-}
-
-header p{
-    font-size:1.3rem;
-}
-
-section{
-    max-width:1200px;
-    margin:auto;
-    padding:50px 20px;
-}
-
-h2{
-    color:#0A192F;
-    margin-bottom:20px;
-    border-left:5px solid #00A8E8;
-    padding-left:15px;
-}
-
-h3{
-    color:#0A192F;
-    margin-top:25px;
-    margin-bottom:10px;
-}
-
-p{
-    margin-bottom:15px;
-}
-
-ul{
-    padding-left:25px;
-}
-
-li{
-    margin-bottom:8px;
-}
-
-.card{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
-    margin-bottom:25px;
-}
-
-footer{
-    background:#0A192F;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-.contact{
-    background:#ffffff;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
     <h1>Anicet OBIANG NZE</h1>
+
     <p>Administrateur Réseaux, Systèmes & Infrastructure</p>
+
+    <div class="stats">
+        🔒 10 Pare-feux pfSense &nbsp; | &nbsp;
+        🌐 10 Sites Active Directory &nbsp; | &nbsp;
+        ☁️ 60+ Utilisateurs Microsoft 365 &nbsp; | &nbsp;
+        📊 Supervision Centralisée Zabbix
+    </div>
+
 </header>
 
-<section>
+<section id="about">
+
+<h2 class="section-title">
+<i class="fas fa-user"></i> À propos de moi
+</h2>
 
 <div class="card">
-
-<h2>À propos de moi</h2>
 
 <p>
 Professionnel expérimenté en administration réseau, sécurité informatique,
@@ -272,158 +213,181 @@ de piloter des projets IT et d'assurer un support technique efficace.
 
 <p>
 Mon expertise couvre les environnements Windows Server, Active Directory,
-VMware, Hyper-V, Proxmox, Microsoft 365 ainsi que les infrastructures réseau
-et de sécurité basées sur Cisco, pfSense, MikroTik et Ubiquiti.
+VMware, Hyper‑V, Proxmox, Microsoft 365 ainsi que les infrastructures réseau
+et sécurité basées sur Cisco, pfSense, MikroTik, Ubiquiti et Zabbix.
 </p>
 
 </div>
 
-<div class="card">
+</section>
 
-<h2>Domaine de compétences</h2>
+<section id="skills">
 
-<h3>Réseaux & Sécurité</h3>
+<h2 class="section-title">
+<i class="fas fa-laptop-code"></i> Domaine de compétences
+</h2>
 
-<ul>
-<li>Cisco CCNA (1, 2 et 3)</li>
-<li>pfSense</li>
-<li>VPN OpenVPN</li>
-<li>VPN IPsec</li>
-<li>Téléphonie IP</li>
-</ul>
+<div class="skills-grid">
 
-<h3>Systèmes & Virtualisation</h3>
+<div class="skill-card">
+<h3><i class="fas fa-network-wired"></i> Réseaux & Sécurité</h3>
+<p>
+Cisco CCNA (1,2,3)<br>
+pfSense<br>
+VPN OpenVPN<br>
+VPN IPsec<br>
+Téléphonie IP
+</p>
+</div>
 
-<ul>
-<li>Windows Server</li>
-<li>Active Directory</li>
-<li>VMware</li>
-<li>Hyper-V</li>
-<li>Proxmox VE</li>
-<li>Proxmox Backup Server</li>
-<li>Ubuntu</li>
-<li>CentOS</li>
-<li>AlmaLinux</li>
-<li>Kali Linux</li>
-</ul>
+<div class="skill-card">
+<h3><i class="fas fa-server"></i> Systèmes & Virtualisation</h3>
+<p>
+Windows Server<br>
+Active Directory<br>
+VMware<br>
+Hyper‑V<br>
+Proxmox VE<br>
+Proxmox Backup Server
+</p>
+</div>
 
-<h3>Supervision & Monitoring</h3>
+<div class="skill-card">
+<h3><i class="fab fa-linux"></i> Linux</h3>
+<p>
+Ubuntu<br>
+CentOS<br>
+Alma Linux<br>
+Kali Linux
+</p>
+</div>
 
-<ul>
-<li>PRTG</li>
-<li>Zabbix</li>
-<li>GLPI</li>
-</ul>
+<div class="skill-card">
+<h3><i class="fas fa-chart-line"></i> Supervision & Monitoring</h3>
+<p>
+PRTG<br>
+Zabbix<br>
+GLPI
+</p>
+</div>
 
-<h3>Infrastructure</h3>
+<div class="skill-card">
+<h3><i class="fas fa-wifi"></i> Infrastructure</h3>
+<p>
+MikroTik<br>
+UniFi<br>
+NanoStation<br>
+ZKTeco<br>
+NVR<br>
+Fibre Optique<br>
+Câblage Réseau
+</p>
+</div>
 
-<ul>
-<li>MikroTik</li>
-<li>Ubiquiti (UniFi & NanoStation)</li>
-<li>ZKTeco</li>
-<li>NVR</li>
-<li>Fibre Optique</li>
-<li>Câblage Réseau</li>
-</ul>
-
-<h3>Outils & Services</h3>
-
-<ul>
-<li>Microsoft 365</li>
-<li>Microsoft Visio</li>
-<li>FreePBX</li>
-</ul>
+<div class="skill-card">
+<h3><i class="fas fa-cloud"></i> Outils & Services</h3>
+<p>
+Microsoft 365<br>
+Microsoft Visio<br>
+FreePBX
+</p>
+</div>
 
 </div>
 
-<div class="card">
+</section>
 
-<h2>Projets Réalisés</h2>
+<section id="projects">
 
-<h3>Réseau & Infrastructure</h3>
+<h2 class="section-title">
+<i class="fas fa-diagram-project"></i> Projets réalisés
+</h2>
 
+<div class="project">
+<h3>🌐 Réseau & Infrastructure</h3>
 <ul>
-<li>Réalisation complète du câblage réseau d'un bâtiment de 5 bureaux incluant le brassage, le sertissage RJ45 et l'installation d'un panneau de brassage 24 ports.</li>
-
-<li>Déploiement et administration d'une infrastructure Wi‑Fi professionnelle basée sur UniFi et Ubiquiti sur plusieurs sites.</li>
-
-<li>Mise en place d'un réseau Wi‑Fi Guest sécurisé pour les visiteurs et partenaires.</li>
-
-<li>Participation au projet de changement du fournisseur d'accès Internet afin d'améliorer les performances et la disponibilité du réseau.</li>
+<li>Réalisation complète du câblage réseau d'un bâtiment de 5 bureaux avec panneau de brassage 24 ports.</li>
+<li>Déploiement et administration d'une infrastructure Wi‑Fi professionnelle basée sur UniFi et Ubiquiti.</li>
+<li>Mise en place d'un réseau Wi‑Fi Guest sécurisé.</li>
+<li>Participation au changement du fournisseur d'accès Internet.</li>
 </ul>
+</div>
 
-<h3>Sécurité & Interconnexion</h3>
-
+<div class="project">
+<h3>🔒 Sécurité & Interconnexion</h3>
 <ul>
 <li>Déploiement et administration de 10 pare-feux pfSense.</li>
-
-<li>Mise en place de 10 tunnels OpenVPN et de 2 tunnels IPsec.</li>
-
-<li>Interconnexion sécurisée de plusieurs sites distants avec la Direction Générale.</li>
+<li>Mise en place de 10 tunnels OpenVPN.</li>
+<li>Mise en place de 2 tunnels IPsec.</li>
+<li>Interconnexion sécurisée des sites distants avec la Direction Générale.</li>
 </ul>
+</div>
 
-<h3>Systèmes & Virtualisation</h3>
-
+<div class="project">
+<h3>🖥️ Systèmes & Virtualisation</h3>
 <ul>
-<li>Déploiement et administration d'infrastructures virtualisées VMware et Proxmox VE.</li>
-
-<li>Mise en œuvre d'une solution de sauvegarde centralisée basée sur Proxmox Backup Server.</li>
-
-<li>Installation et administration de serveurs Windows Server sur plusieurs sites.</li>
-
-<li>Mise en place de la réplication Active Directory sur 10 sites distants.</li>
+<li>Déploiement et administration d'infrastructures VMware et Proxmox VE.</li>
+<li>Mise en œuvre d'une solution Proxmox Backup Server.</li>
+<li>Installation et administration de serveurs Windows Server.</li>
+<li>Mise en place de la réplication Active Directory sur 10 sites.</li>
 </ul>
+</div>
 
-<h3>Cloud & Collaboration</h3>
-
+<div class="project">
+<h3>☁️ Cloud & Collaboration</h3>
 <ul>
-<li>Pilotage de la migration de plus de 60 utilisateurs vers Microsoft 365.</li>
+<li>Migration de plus de 60 utilisateurs vers Microsoft 365.</li>
+<li>Migration des services de messagerie.</li>
+<li>Modernisation des outils collaboratifs.</li>
 </ul>
+</div>
 
-<h3>Supervision</h3>
-
+<div class="project">
+<h3>📊 Supervision</h3>
 <ul>
-<li>Mise en œuvre et administration d'une plateforme centralisée de supervision basée sur Zabbix.</li>
+<li>Mise en œuvre et administration d'une plateforme centralisée Zabbix.</li>
 </ul>
+</div>
 
-<h3>Téléphonie IP</h3>
-
+<div class="project">
+<h3>☎️ Téléphonie IP</h3>
 <ul>
-<li>Réalisation d'un projet pilote de téléphonie IP sous FreePBX pour la DSI.</li>
+<li>Réalisation d'un projet pilote de téléphonie IP sous FreePBX.</li>
 </ul>
+</div>
 
-<h3>Support & Exploitation</h3>
-
+<div class="project">
+<h3>🛠️ Support & Exploitation</h3>
 <ul>
 <li>Gestion et maintenance de plus de 100 équipements informatiques.</li>
-
 <li>Renouvellement de près de 50 % du parc informatique.</li>
-
 <li>Installation et mise en service d'imprimantes réseau.</li>
-
-<li>Support des infrastructures informatiques sur plusieurs sites distants.</li>
+<li>Support multi-sites.</li>
 </ul>
-
-<h3>Encadrement & Gestion</h3>
-
-<ul>
-<li>Encadrement de deux stagiaires ASUR durant six mois.</li>
-
-<li>Gestion des demandes d'achat du département informatique et suivi des fournisseurs IT.</li>
-</ul>
-
 </div>
+
+<div class="project">
+<h3>👥 Encadrement & Gestion</h3>
+<ul>
+<li>Encadrement de deux stagiaires ASUR pendant six mois.</li>
+<li>Gestion des demandes d'achat du département informatique.</li>
+<li>Suivi de fournisseurs IT.</li>
+</ul>
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">
+<i class="fas fa-address-card"></i> Contact
+</h2>
 
 <div class="contact">
 
-<h2>Contact</h2>
-
 <p>📍 Libreville, Gabon</p>
-
 <p>📞 062 96 64 71 / 074 71 77 05</p>
-
 <p>📧 anicetobiang4@gmail.com</p>
-
 <p>📄 N° PNPE : D803-2023-G1</p>
 
 </div>
